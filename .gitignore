@@ -1,0 +1,8 @@
+.idea/
+.venv/
+data/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+tp_CNN_Lenet5.pdf
+WhatsApp*.jpeg

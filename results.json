@@ -1,0 +1,50 @@
+{
+  "dataset": "AMHCD",
+  "n_classes": 33,
+  "n_images": 25740,
+  "split": {
+    "train": 18018,
+    "val": 3861,
+    "test": 3861
+  },
+  "batch_size": 128,
+  "epochs": 10,
+  "seed": 42,
+  "device": "cpu",
+  "architecture": {
+    "conv1_out": 6,
+    "conv2_out": 16,
+    "fc1": 120,
+    "fc2": 84,
+    "num_classes": 33,
+    "activation": "relu"
+  },
+  "experiments": [
+    {
+      "optimiseur": "SGD",
+      "best_val_acc": 0.9463869463869464,
+      "test_loss": 0.19615655783944969,
+      "test_acc": 0.9417249417249417,
+      "temps_total_s": 43.15217924118042
+    },
+    {
+      "optimiseur": "Adam",
+      "best_val_acc": 0.9469049469049469,
+      "test_loss": 0.19913272810890031,
+      "test_acc": 0.9476819476819477,
+      "temps_total_s": 53.34520769119263
+    },
+    {
+      "optimiseur": "RMSprop",
+      "best_val_acc": 0.9401709401709402,
+      "test_loss": 0.21863381808917468,
+      "test_acc": 0.9347319347319347,
+      "temps_total_s": 42.9772686958313
+    }
+  ],
+  "best": {
+    "optimizer": "Adam",
+    "test_acc": 0.9476819476819477,
+    "test_loss": 0.19913272810890031
+  }
+}
